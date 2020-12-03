@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 2.5px 5px rgba(0, 0, 0, 0.24);
+}
+
+* {
+    -webkit-user-select: none;     
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://scontent.flhe2-2.fna.fbcdn.net/v/t1.0-9/p960x960/120079265_1247936442222313_994048301499759733_o.jpg?_nc_cat=100&ccb=2&_nc_sid=85a577&_nc_eui2=AeH-FATjT-ms2qdlmHptllceGWgkVkKThRYZaCRWQpOFFoOSNHeZfJK6PpG6uKfLgGm9MUeCPAUtKP5CPEAJ73tS&_nc_ohc=QUqJZHEnKQcAX-fAyc-&_nc_ht=scontent.flhe2-2.fna&tp=6&oh=52272f751f94bca6e3f3104d3338c516&oe=5FB9662E");
+    background-position: right;     
+    background-repeat: no-repeat;
+    background-size: 200px auto;
+    border-radius: 8px;
+    background-color: #eef5ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    margin: 30px auto;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: 900;
+}
+
+h3 {
+    border-bottom: 1px solid #bbbbbb;
+    padding-bottom: 10px;
+    margin: 40px 0 10px;
+}
+
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.iecontainer {
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.iecontainer > div {
+    flex: 1;
+    text-align: center;
+}
+
+.iecontainer > div:first-of-type {
+    border-right: 1px solid #bbbbbb;
+}
+label {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+input[type="text"], input[type="number"] {
+    border: 1px solid #888888;
+    border-radius: 3px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border: 1px solid black;
+}
+
+.btn {
+    background-color: #0c0c0c;
+    box-shadow: var(--box-shadow);
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.delete-btn {
+    background-color: #e04231;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    height: 40px;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.list li:hover .delete-btn {
+    opacity: 1;
+}

@@ -1,0 +1,17 @@
+.money {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+.money.plus {
+    font-size: 20px;
+    color: #00c7c7;
+    font-weight: bold;
+}
+
+.money.minus {
+    font-size: 20px;
+    color: #e04231;
+    font-weight: bold;
+}
