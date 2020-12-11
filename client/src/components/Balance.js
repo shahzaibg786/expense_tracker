@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from "../context/GlobalState";
-
+import {numberWithCommas} from "../utills/format";
 
 //sfc	Stateless Function Component
 //ssf	Functional setState
@@ -14,7 +14,7 @@ export const Balance = () => {
     return ( 
         <div>
             <h4>Current Balance</h4>
-            <h1>${total}</h1>
+            <h1>${numberWithCommas(total)}</h1>
         </div>
      );
 }

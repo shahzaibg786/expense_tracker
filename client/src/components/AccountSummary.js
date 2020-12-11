@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import '../components/AccountSummary.css';
 //import global context
 import { GlobalContext } from "../context/GlobalState";
-
+import {numberWithCommas} from "../utills/format";
 
 export const AccountSummary = () => {
     const { transactions } = useContext(GlobalContext);
@@ -20,13 +20,13 @@ export const AccountSummary = () => {
             <div>
                 <h4>INCOME</h4>
                 <p className = 'moneyplus'>
-                    ${income}
+                    ${numberWithCommas(income)}
                 </p>
             </div>
             <div>
             <h4>EXPENSE</h4>
                 <p className = 'moneyminus'>
-                    ${expense}
+                    ${numberWithCommas(expense)}
                 </p>
             </div>
         </div>
