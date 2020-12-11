@@ -30,8 +30,6 @@ jobs:
         with:
           node-version: 12.18.3
       - name: GitHub Action for NPM/Chrome
-        # You may pin to the exact commit or the version.
-        # uses: daleobrien/npm-with-chrome-browser-action@dfe13b04e9f0fcea5e77f1e1692487282bca0970
         uses: daleobrien/npm-with-chrome-browser-action@v1.0.1
         with:
           cmd: npm install
